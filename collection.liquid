@@ -1,0 +1,8 @@
+{% comment %}
+Add to bottom of collection.liquid
+{% endcomment %}
+
+<script>
+{% capture content %}{% include 'quickview' %}{% endcapture %}
+      var content = {{ content | json }};
+</script>
